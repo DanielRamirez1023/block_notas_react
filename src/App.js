@@ -76,6 +76,8 @@ function App() {
   } = useLocalStorage("tasks", []);
   // estado para el manejo de nuestro modal
   const [openModal, setModal] = React.useState(false);
+
+  const [Check, setCheck] = React.useState(false);
   // manejo de estados para el search
   const [searchValue, setSearchValue] = React.useState("");
 
@@ -112,9 +114,10 @@ function App() {
 
     const UpdateTasks = [...tasks];
 
-    UpdateTasks[taskIndex].completed = true;
+    setCheck(!Check);
 
-    console.log(prueba);
+    UpdateTasks[taskIndex].completed = Check;
+
     saveTask(UpdateTasks);
   }
 

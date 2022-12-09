@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/block_notas_react/static/css/main.52d1658e.css",
+    "main.js": "/block_notas_react/static/js/main.e6886a91.js",
+    "index.html": "/block_notas_react/index.html",
+    "main.52d1658e.css.map": "/block_notas_react/static/css/main.52d1658e.css.map",
+    "main.e6886a91.js.map": "/block_notas_react/static/js/main.e6886a91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52d1658e.css",
+    "static/js/main.e6886a91.js"
+  ]
+}

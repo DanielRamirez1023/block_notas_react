@@ -1,0 +1,12 @@
+ul {
+  margin: auto;
+  padding: 0 0 56px 0;
+  list-style: none;
+  width: 70%;
+}
+
+@media (max-width: 600px) {
+  ul {
+    width: 100%;
+  }
+}

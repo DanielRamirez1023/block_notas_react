@@ -68,6 +68,7 @@ function App() {
   // manejo de estaodos para las tareas
   // task es el valor setTask metodo para modfiicar
 
+  // hooks
   const {
     item: tasks,
     saveItem: saveTask,
@@ -108,7 +109,6 @@ function App() {
     saveTask(UpdateTasks);
   }
 
-  let prueba = new Array(3);
   function completeTask(text) {
     const taskIndex = tasks.findIndex((task) => task.text === text);
 
@@ -136,8 +136,9 @@ function App() {
       <TodoCounter completed={TasksCompleted} total={totalTasks} />
       <TodoSearch searchValue={searchValue} setSearch={setSearchValue} />
       <TodoList>
-        {error && <p>pailas....</p>}
-        {loading && prueba.fill(1).map((a, i) => <Loading key={i} />)}
+        {error && <p>error....</p>}
+        {loading &&
+          new Array(tasks.length).fill(1).map((a, i) => <Loading key={i} />)}
 
         {searchTasks.map((task) => (
           <TodoItem
